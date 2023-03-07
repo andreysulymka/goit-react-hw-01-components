@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { Container, Card, Photo, List, Items, Username} from './profile.styled';
+import { Container, Card, Photo, List, Items, Username, InventorySpan} from './profile.styled';
 
 export { Profile };
 
@@ -13,22 +13,22 @@ function Profile({ avatar, username, tag, location, stats }) {
       
     />
     <Username >{username}</Username>
-    <p className="tag">@{tag}</p>
-    <p className="location">{location}</p>
+    <p>@{tag}</p>
+    <p>{location}</p>
   </Card>
 
   <List>
     <Items>
-      <span className="label">Followers</span>
-      <span className="quantity">{stats.followers}</span>
+      <InventorySpan>Followers</InventorySpan>
+      <span>{stats.followers}</span>
     </Items>
     <Items>
-      <span className="label">Views</span>
-      <span className="quantity">{stats.views}</span>
+      <InventorySpan>Views</InventorySpan>
+      <span >{stats.views}</span>
     </Items>
     <Items>
-      <span className="label">Likes</span>
-      <span className="quantity">{stats.likes}</span>
+      <InventorySpan>Likes</InventorySpan>
+      <span>{stats.likes}</span>
     </Items>
   </List>
 </Container>

@@ -1,4 +1,5 @@
-import {Table, Head, Body} from "./TransactionHistory.styled"
+import { Table, Head, Body } from "./TransactionHistory.styled"
+
 export { TransactionHistory};
 
 function TransactionHistory({ items}) {
@@ -23,3 +24,4 @@ function TransactionHistory({ items}) {
             </tbody>
 </Table>
 }
+

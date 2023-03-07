@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types';
-import { List, Item } from './FriendList.styled';
+import { List, Item, OnlineDot } from './FriendList.styled';
 export { FriendList };
     
 
 function FriendListItem({avatar, name, isOnline}) {
     return <Item >
-        <span >{isOnline}</span>
+        <OnlineDot isOnline={isOnline}>{isOnline}</OnlineDot>
         <img  src={avatar} alt="User avatar" width="48" />
         <p >{name}</p>
     </Item >

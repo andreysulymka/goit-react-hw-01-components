@@ -1,3 +1,4 @@
+
 import styled from "styled-components";
 
 export const Container = styled.div`
@@ -31,11 +32,9 @@ export const List = styled.ul`
     background-color: rgb(243, 246, 249);
     border-bottom-right-radius: 8px;
     border-bottom-left-radius: 8px;
-    width: 100%;
+    width: 100%;`
     
-    :hover{
-    background-color: rgba(234, 223, 139, 0.8);
-    cursor: pointer;}`
+    
 
 export const Items = styled.li`
   padding: 0;
@@ -46,7 +45,15 @@ export const Items = styled.li`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-left: 1px solid rgb(231, 236, 242);`
+    border-left: 1px solid rgb(231, 236, 242);
+    :hover{
+    background-color: rgba(234, 223, 139, 0.8);
+    cursor: pointer;}`
 
 export const Username = styled.p`
- font-size: 100;`
+ font-size: 100;
+ font-weight: bold;`
+
+export const InventorySpan = styled.span`
+ font-weight: bold;`
+ 

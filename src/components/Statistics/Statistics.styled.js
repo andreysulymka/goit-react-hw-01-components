@@ -18,12 +18,12 @@ width: 100%;
     margin: 0;
     height: 40px;
     border-bottom-right-radius: 8px;
-    border-bottom-left-radius: 8px;`
-
-export const Items = styled.li`
-background-color: rgb(254, 79, 96);
+    border-bottom-left-radius: 8px;
+    
+    li{background-color: rgb(254, 79, 96);
     display: flex;
     flex-direction: column;
     align-items: center;
     color: #fff;
-    width: 100%;`
+    width: 100%;}`
+

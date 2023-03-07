@@ -11,4 +11,7 @@ background-color: rgb(0, 188, 213);
 
 export const Body = styled.tr`
  background-color: #fff;
-    height: 40px;`
+    height: 40px;
+    :hover{
+    background-color: rgba(234, 223, 139, 0.8);
+    cursor: pointer;}`
