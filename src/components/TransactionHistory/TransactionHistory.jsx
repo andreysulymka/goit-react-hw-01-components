@@ -1,4 +1,5 @@
 import { Table, Head, Body } from "./TransactionHistory.styled"
+import PropTypes from 'prop-types';
 
 export { TransactionHistory};
 
@@ -24,4 +25,10 @@ function TransactionHistory({ items}) {
             </tbody>
 </Table>
 }
-
+TransactionHistory.propTypes = {
+    id: PropTypes.string,
+    type: PropTypes.string,
+  amount: PropTypes.string,
+  currency: PropTypes.string,
+    
+};
